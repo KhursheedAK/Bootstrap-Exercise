@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 3</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="display-1 text-center">Part 1</h1>
+
+      <!-- Form Part 1 -->
+      <form>
+        <h2>Billing Address</h2>
+        <!-- Full Name -->
+        <div class="mb-3">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input
+            type="text"
+            id="fullName"
+            placeholder="Full Name"
+            class="form-control"
+            name="fullName"
+            value=""
+          />
+        </div>
+        <!-- User Name -->
+        <div class="mb-3">
+          <label class="form-label" for="userName">Username</label>
+          <div class="input-group">
+            <span class="input-group-text">@</span>
+            <input
+              type="text"
+              placeholder="Username"
+              id="userName"
+              class="form-control"
+              name="userName"
+              value=""
+            />
+          </div>
+        </div>
+        <!-- Email (Optional) -->
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <span class="text-muted">(optional)</span>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            class="form-control"
+            value=""
+          />
+        </div>
+        <!-- Address -->
+        <div class="mb-3">
+          <label class="form-label" for="address">Address</label>
+          <input
+            type="text"
+            id="address"
+            class="form-control"
+            placeholder="1234 Market St."
+            name="address"
+            value=""
+          />
+        </div>
+        <!-- Address 2 (Optional)-->
+        <div class="mb-3">
+          <label for="address-2" class="form-label">Address 2</label>
+          <input
+            type="text"
+            id="address-2"
+            class="form-control"
+            placeholder="Apartment or Suite"
+            name="address-2"
+            value=""
+          />
+        </div>
+        <!-- Special Notes(Optional) -->
+        <div class="mb-3">
+          <label class="form-label" for="textArea">Special Notes</label>
+          <span class="text-muted">(Optional)</span>
+          <textarea
+            class="form-control"
+            id="textArea"
+            name="textArea"
+            value=""
+            aria-describedby="textAreaHelp"
+          ></textarea>
+          <div id="textAreaHelp" class="form-text">
+            Include any special requests you have for us!
+          </div>
+          <!-- Check Box 1 -->
+          <div class="form-check mt-3">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="same"
+              value=""
+              id="same"
+            />
+            <label class="form-check-label" for="same"
+              >Shipping address is same as billing</label
+            >
+          </div>
+          <!-- Check Box 2 -->
+          <div class="form-check mt-3">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="save"
+              value=""
+              id="save"
+            />
+            <label class="form-check-label" for="save"
+              >Save my info for next time</label
+            >
+          </div>
+          <hr />
+          <div class="mb-3">
+            <h2>Shipping Options</h2>
+            <form class="form-check mt-3">
+              <div>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="radioOption"
+                  value="sameDay"
+                  id="sameDay"
+                />
+                <label class="form-check-label" for="sameDay"
+                  >Same Day Shipping</label
+                >
+              </div>
+              <div>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="radioOption"
+                  value="nextDay"
+                  id="nextDay"
+                />
+                <label class="form-check-label" for="nextDay"
+                  >Next Day Shipping</label
+                >
+              </div>
+              <div>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="radioOption"
+                  value="three2Five"
+                  id="three2Five"
+                />
+                <label class="form-check-label" for="three2Five"
+                  >3-5 Business Days</label
+                >
+              </div>
+              <input
+                type="submit"
+                class="form-control mt-3 btn btn-lg btn-primary btn-block"
+                value="Continue To Checkout"
+                name="Continue To Checkout"
+                id="checkout"
+              />
+            </form>
+          </div>
+        </div>
+      </form>
+      <!-- Form Part 2 -->
+      <h1 class="display-1 text-center">PART 2</h1>
+      <div class="container border rounded w-25 p-2 mt-3 mb-5">
+        <h2 class="text-center my-3">Sign In</h2>
+        <form class="p-4">
+          <div class="mb-3">
+            <input
+              type="email"
+              placeholder="Email"
+              class="form-control"
+              name="email2"
+              value=""
+              id="email2"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="password"
+              placeholder="Password"
+              class="form-control"
+              name="password2"
+              value=""
+              id="password2"
+            />
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="rememberMe"
+              name="rememberMe"
+              value=""
+            />
+            <label for="rememberMe" class="form-check-label">Remember Me</label>
+          </div>
+          <input
+            type="submit"
+            name="signin"
+            value="Signin"
+            class="form-control btn btn-block btn-info mt-3 text-white rounded-0"
+          />
+          <span class="d-block text-center mt-2"
+            >Not a member?
+            <a href="#" class="text-decoration-none text-info">Register</a>
+          </span>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
